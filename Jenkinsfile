@@ -21,7 +21,7 @@ pipeline {
             		jacoco()
 		}
 	}       
-       /*
+       
 	stage('SonarQube'){
 		steps{
 				bat label: '', script: '''mvn sonar:sonar \
@@ -29,7 +29,7 @@ pipeline {
 				-Dsonar.login=1253462271033e5e26325c3fba29a9031551325b'''
 			}
    		}
-	*/
+	
 	
 	stage('Maven Package'){
 		steps{
